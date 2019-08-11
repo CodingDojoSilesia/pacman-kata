@@ -68,4 +68,5 @@ The senior level already now, that TDD is a must.
 
 Author of this Kata: [Arek Nowakowski](https://www.linkedin.com/in/arkadiusz-nowakowski-040723122/).
 Inspirations: [codingdojo.org](http://codingdojo.org/kata/PacMan/) and [codewars.com](https://www.codewars.com/kata/pacman/ruby).
+The ghosts' AI description can be found [here](https://dev.to/code2bits/pac-man-patterns--ghost-movement-strategy-pattern-1k1a) and [here](https://gameinternals.com/understanding-pac-man-ghost-behavior).
 
