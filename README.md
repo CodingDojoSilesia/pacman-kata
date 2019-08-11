@@ -29,22 +29,22 @@ Create the Pac-Man class, that...
 	- if the Pac-Man state is not _super_, eating a ghost should decrease `lives` by 1,
 	- if the Pac-Man has zero `lives` left, eating a ghost should reset `points` to zero,
 	- eating a ghost should increase the total `ghost count` by 1;
-- `ghost count` should store statistics for each ghosts as well as the total number of eaten ghosts.
+- `ghost count` should store statistics for each ghostsas well as the total number of eaten ghosts.
 
 **Remember, be TDD-ish!** Go do some tests now!
 
 ## Mid level
 
 Now, do some extra features:
-- the Pac-Man is now on a `grid` (a map, level) filled with dots (eventually empty spaces if a dot is already eaten),
-- the Pac-Man
+- the Pac-Man is now on a `grid` (a map, level) filled with dots (eventually empty spaces if dots are already eaten),
+- the Pac-Man...
 	- has a `direction`,
 	- `moves` on each tick (discrete steps by one square),
 	- can be rotated by an user (the direction changing),
 	- eats dots,
 	- stops on wall,
 	- will not rotate into a wall;
-- add the `ghost` class, which have also a position, direction and moves on each step,
+- add the `ghost` class, which has also a position, direction and moves on each step,
 - add a collision detection between ghosts and the Pac-Man.
 
 **Remember, be TDD-ish!** Go do some tests now!
