@@ -2,7 +2,7 @@
   "name": "coding-dojo-silesia--pacman-kata",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "parcel ./src/public/index.html",
     "build": "parcel build ./src/public/index.html"
   },
@@ -18,7 +18,10 @@
     "scss": "^0.2.4"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.17",
+    "jest": "^24.9.0",
     "sass": "^1.22.9",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.5.3"
   }
 }
