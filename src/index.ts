@@ -14,4 +14,22 @@ previewRenderer.loadAssets().then(() => {
             [0, 0, 0, 0, 0]
         ]
     });
+    window.addEventListener('keydown', event => {
+        if (event.key == ' ') {
+            // space
+        } else if (event.keyCode == 38) {
+            // up arrow
+        }
+        else if (event.keyCode == 40) {
+            // down arrow
+        }
+        else if (event.keyCode == 37) {
+           // left arrow
+        }
+        else if (event.keyCode == 39) {
+           // right arrow
+        }
+    });
 });
+
+
