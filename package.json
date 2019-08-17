@@ -1,0 +1,24 @@
+{
+  "name": "coding-dojo-silesia--pacman-kata",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./src/public/index.html",
+    "build": "parcel build ./src/public/index.html"
+  },
+  "keywords": [
+    "coding dojo",
+    "kata"
+  ],
+  "author": "Arek Nowakowski",
+  "license": "ISC",
+  "dependencies": {
+    "js13k-2d": "^0.8.0",
+    "parcel-bundler": "^1.12.3",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "sass": "^1.22.9",
+    "typescript": "^3.5.3"
+  }
+}

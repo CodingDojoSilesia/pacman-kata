@@ -56,7 +56,7 @@ There are two modes for ghosts' AI: _scatter_ and _chase_. Each ghost is in the 
 
 In the _scatter_ mode, the ghosts will stop chasing Pac-Man and each will move into its respective corners. See the following image:
 
-![The scatter mode corners](scatter.png)
+![The scatter mode corners](docs/scatter.png)
 
 In the _chase_ mode, the ghosts are trying to find and capture Pac-Man. Each of the four ghosts has a unique behaviour while chasing Pac-Man. Blinky the red ghost is very aggressive in its approach while chasing Pac-Man and will follow Pac-Man once located. Pinky the pink ghost will attempt to ambush Pac-Man by trying to get in front of him and cut him off. Inky the cyan ghost will patrol an area and is not very predictable in this mode. Clyde the orange ghost is moving in a random fashion and seems to stay out of the way of Pac-Man.
 
@@ -69,4 +69,5 @@ The senior level already now, that TDD is a must.
 Author of this Kata: [Arek Nowakowski](https://www.linkedin.com/in/arkadiusz-nowakowski-040723122/).
 Inspirations: [codingdojo.org](http://codingdojo.org/kata/PacMan/) and [codewars.com](https://www.codewars.com/kata/pacman/ruby).
 The ghosts' AI description can be found [here](https://dev.to/code2bits/pac-man-patterns--ghost-movement-strategy-pattern-1k1a) and [here](https://gameinternals.com/understanding-pac-man-ghost-behavior).
+The spritesheet: [https://github.com/rm-hull/big-bang/tree/master/examples/pacman](https://github.com/rm-hull/big-bang/tree/master/examples/pacman)
 
