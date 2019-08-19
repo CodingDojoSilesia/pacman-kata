@@ -9,7 +9,8 @@ The Kata has 3 levels of advancement: junior, mid and senior.
 Each level introduces new features and twists.
 Start with the junior level and finish it, then move to the next level. Remember about testing, a level is completed, if only all relevant tests are green!
 
-The boilerplate for this Kata contains [the visualisation](#markdown-header-visualisation) for the game state.
+The boilerplate for this Kata contains the visualisation for the game state, but use it for debbuging purposes.
+This Kata's task is about good OOP programming and testing, the visualisation is not crucial.
 
 ## Junior level
 
@@ -79,6 +80,65 @@ Be brave and interpret the exact ghosts' algorithms as you want to. The senior l
 - `npm run build` to build the production code in the folder `dist` (without starting a server).
 
 ## Visualisation
+
+The Pac-Man's visualisation is a very simple code, that takes the current state as an argument and displays it on the HTML5canvas.
+The state has the following interface:
+```
+interface PacManState {
+    pacman: [number, number, string]; // [x, y, direction]
+    blinky: [number, number, string]; // [x, y, direction]
+    pinky: [number, number, string]; // [x, y, direction]
+    inky: [number, number, string]; // [x, y, direction]
+    clyde: [number, number, string]; // [x, y, direction]
+    map: [number, number, number[][]];  // [width, height, [the map data, where 0 means a wall, 1 an empty field, 2 a small dot and 3 a super dot]]
+    // Pac-Man's statistics from the class
+    lives: number,
+    points: number,
+    level: number,
+    ballCount: number,
+    ghostCount: {
+        total: number,
+        blinkyCount: number,
+        pinkyCount: number,
+        inkyCount: number,
+        clydeCount: number
+    },
+    state: string,
+    superTime: number
+};
+```
+The example:
+```
+const testState: PacManState = {
+    pacman: [0, 0, 'down'],
+    blinky: [1, 0, 'up'],
+    pinky: [2, 0, 'left'],
+    inky: [3, 0, 'right'],
+    clyde: [4, 0, 'up'],
+    map: [5, 6,  [
+        [1, 1, 1, 1, 1],
+        [1, 0, 2, 0, 1],
+        [1, 1, 2, 0, 1],
+        [1, 0, 2, 2, 1],
+        [1, 0, 0, 3, 0],
+        [1, 1, 2, 2, 0]
+    ]],
+    lives: 3,
+    points: 10,
+    level: 1,
+    ballCount: 6,
+    ghostCount: {
+        total: 4,
+        blinkyCount: 1,
+        pinkyCount: 2,
+        inkyCount: 0,
+        clydeCount: 1
+    },
+    state: 'regular',
+    superTime: 0
+};
+```
+See how to use that example in the `index.ts` file.
 
 ## Credits
 

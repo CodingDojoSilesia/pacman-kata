@@ -1,1 +1,13 @@
-
+body {
+    background-color: #204060;
+    font-family: 'VT323', monospace;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+p, canvas {
+    margin: 0 0 16px;
+}
+canvas {
+    border: 16px solid #0F0A7E;
+}
