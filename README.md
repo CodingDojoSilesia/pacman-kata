@@ -83,7 +83,7 @@ Be brave and interpret the exact ghosts' algorithms as you want to. The senior l
 
 The Pac-Man's visualisation is a very simple code, that takes the current state as an argument and displays it on the HTML5canvas.
 The state has the following interface:
-```
+```ts
 interface PacManState {
     pacman: [number, number, string]; // [x, y, direction]
     blinky: [number, number, string]; // [x, y, direction]
@@ -108,7 +108,7 @@ interface PacManState {
 };
 ```
 The example:
-```
+```ts
 const testState: PacManState = {
     pacman: [0, 0, 'down'],
     blinky: [1, 0, 'up'],
