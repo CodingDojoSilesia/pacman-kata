@@ -107,7 +107,7 @@ interface PacManState {
     superTime: number
 };
 ```
-The example:
+Where, a `direction` needs to have one from the following values: `up`, `down`, `left` and `right`. The exemplary state:
 ```ts
 const testState: PacManState = {
     pacman: [0, 0, 'down'],
@@ -138,7 +138,7 @@ const testState: PacManState = {
     superTime: 0
 };
 ```
-See how to use that example in the `index.ts` file.
+See how to use that example in the [index.ts](src/index.ts) file.
 
 ## Credits
 
