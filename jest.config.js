@@ -3,6 +3,7 @@ module.exports = {
         "<rootDir>/test"
     ],
     "transform": {
-        "^.+\\.tsx?$": "ts-jest"
+        "^.+\\.tsx?$": "ts-jest",
+        "^.+\\.(js|jsx)?$": "babel-jest"
     }
 }
